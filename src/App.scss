@@ -1,15 +1,16 @@
+@import './styles/_colors.scss';
+
 .App {
   text-align: center;
 }
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+  height: 10vmin;
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: $primaryColor;
   min-height: 100vh;
   display: flex;
   flex-direction: column;

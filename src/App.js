@@ -1,25 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import './App.scss'
+import HeaderView from './components/header'
+import FooterView from './components/footer'
+import ProjectList from './components/projects/list'
+import { Hero } from "react-bulma-components/full";
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Hero size="fullheight" className="App">
+      <Hero.Head renderAs="header">
+        <HeaderView />
+      </Hero.Head>
+
+      <Hero.Body>
+        <ProjectList />
+      </Hero.Body>
+
+      <Hero.Footer>
+          <FooterView/>
+      </Hero.Footer>
+    </Hero>
   );
 }
 

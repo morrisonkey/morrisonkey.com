@@ -3,6 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import ReactGA from 'react-ga';
+
+ReactGA.initialize('UA-139320066-1'); // Google analytics tracking ID
+// tracking specific pathname
+// ReactGA.pageview("/");
+// general automated tracking (using react router)
+// history.listen(location => ReactGA.pageview(location.pathname));
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
