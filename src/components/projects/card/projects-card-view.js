@@ -1,13 +1,12 @@
 import React from 'react';
-import SmallButton from '../../utils/button/small'
+import './projects-card.scss';
 
 const ProjectCard = (props) => {
-  const {title, subtitle, imageURL} = props.data
+  const {title, subtitle, imageURL, development} = props.data
   return (
     <div className="projects-list-card">
-      <h2>{title}</h2> 
-      <p>{subtitle}</p>
-      <SmallButton onClick={props.hideProject} text="Click to filter"/>
+      <h2 className="title">{title}</h2>
+      <div></div>
     </div>
   )
 }

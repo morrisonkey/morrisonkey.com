@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 300;
+  src:
+    local('Gilroy Light'),
+    local('Gilroy-Light'),
+    url(./assets/fonts/Gilroy-Light.otf) format('otf');
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  font-style: bold;
+  font-weight: 700;
+  src:
+    local('Gilroy Extra Bold'),
+    local('Gilroy-Extra-Bold'),
+    url(./assets/fonts/Gilroy-ExtraBold.otf) format('otf');
+}

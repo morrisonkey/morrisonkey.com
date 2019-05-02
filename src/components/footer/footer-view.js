@@ -1,17 +1,23 @@
 import React from 'react';
 import { Container, Content, Footer } from "react-bulma-components/full";
+import dribbble from '../../assets/logos/dribbble-logo.svg';
+import github from '../../assets/logos/github-logo.svg';
+import instagram from '../../assets/logos/instagram-logo.svg';
+import linkedin from '../../assets/logos/linkedin-logo.svg';
+import medium from '../../assets/logos/medium-logo.svg';
 import './footer-view.scss'
 
 function FooterView() {
   return (
     <Footer>
-      <Container>
-        <Content style={{ textAlign: 'center' }}>
-          <p>
-            <strong>Bulma</strong> by <a href="http://jgthms.com">Jeremy Thomas</a>. The source code is licensed
-            <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content is licensed{' '}
-            <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
-          </p>
+      <img src={instagram} className="social-logo" alt="logo" />
+      <img src={dribbble} className="social-logo" alt="logo" />
+      <img src={github} className="social-logo" alt="logo" />
+      <img src={linkedin} className="social-logo" alt="logo" />
+      <img src={medium} className="social-logo" alt="logo" />
+      <Container className="copywrite-container">
+        <Content className="copywrite-content">
+          &copy;2019 Morrison Key
         </Content>
       </Container>
     </Footer>
