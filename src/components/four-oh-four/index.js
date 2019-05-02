@@ -1,0 +1,1 @@
+export {default} from './four-oh-four-view.js'

@@ -24,6 +24,7 @@
     font-weight: 700;
     font-size: 16px;
     letter-spacing: 8px;
+    margin-left: 200px;
   }
 
   &-description {
@@ -32,6 +33,7 @@
     font-weight: 300;
     font-size: 16px;
     letter-spacing: 2px;
+    max-width: 300px;;
   }
 
   &-link {
@@ -77,4 +79,88 @@
         opacity: 1;
     }
   }
+
+  .reincarnage {
+    position: relative;
+    animation: float-up 24s ease-in-out infinite;
+
+    &-image {
+      position: absolute;
+      transform: translate(0px);
+    }
+
+    &-large-cloud {
+      top: -10px;
+      right: -40px;
+      width: 350px;
+      animation: slide-right 18s ease-in-out infinite;
+    }
+    &-medium-cloud {
+      top: 300px;
+      left: -50px;
+      width: 300px;
+      animation: slide-left 18s ease-in-out infinite;
+    }
+    &-small-cloud {
+      top: 10px;
+      left: 80px;
+      width: 250px;
+      animation: float-down 18s ease-in-out infinite;
+    }
+    &-bird {
+      top: 175px;
+      left: 350px;
+      animation: float-down 24s ease-in-out infinite;
+    }
+  }
+}
+
+@keyframes float-up {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+
+@keyframes float-down {
+	0% {
+		transform: translatey(-20px);
+	}
+	50% {
+		transform: translatey(0px);
+	}
+	100% {
+		transform: translatey(-20px);
+	}
+}
+
+@keyframes slide-left {
+	0% {
+		transform: translatex(0px);
+	}
+	50% {
+		transform: translatex(-25px);
+	}
+	100% {
+		transform: translatex(0px);
+	}
+}
+
+
+@keyframes slide-right {
+	0% {
+		transform: translatex(0px);
+	}
+	50% {
+		transform: translatex(+30px);
+	}
+	100% {
+		transform: translatex(0px);
+	}
 }
