@@ -10,26 +10,24 @@ import './footer-view.scss'
 function FooterView() {
   return (
     <Footer>
-      <a href="https://www.instagram.com/morrison_key" target="_blank">
-        <img src={instagram} className="social-logo" alt="logo" />
+      <div className="copywrite">
+        <p className="copywrite-text">&copy;2019 Morrison Key</p>
+      </div>
+      <a href="https://www.instagram.com/morrison_key" target="_blank" className="social-logo">
+        <img src={instagram} alt="logo" />
       </a>
-      <a href="https://dribbble.com/morrison_key" target="_blank">
-        <img src={dribbble} className="social-logo" alt="logo" />
+      <a href="https://dribbble.com/morrison_key" target="_blank" className="social-logo">
+        <img src={dribbble} alt="logo" />
       </a>
-      <a href="https://github.com/morrison-key" target="_blank">
-        <img src={github} className="social-logo" alt="logo" />
+      <a href="https://github.com/morrison-key" target="_blank" className="social-logo">
+        <img src={github} alt="logo" />
       </a>
-      <a href="https://www.linkedin.com/in/morrison-key/" target="_blank">
-        <img src={linkedin} className="social-logo" alt="logo" />
+      <a href="https://www.linkedin.com/in/morrison-key/" target="_blank" className="social-logo">
+        <img src={linkedin} alt="logo" />
       </a>
-      <a href="https://medium.com/@morrison_key" target="_blank">
-        <img src={medium} className="social-logo" alt="logo" />
+      <a href="https://medium.com/@morrison_key" target="_blank" className="social-logo">
+        <img src={medium} alt="logo" />
       </a>
-      <Container className="copywrite-container">
-        <Content className="copywrite-content">
-          &copy;2019 Morrison Key
-        </Content>
-      </Container>
     </Footer>
   );
 }

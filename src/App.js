@@ -2,7 +2,7 @@ import React from 'react'
 import { Switch, Route } from 'react-router-dom';
 import './App.scss'
 import About from './components/about'
-import FourOhFour from './components/four-oh-four'
+import NotFound from './components/404'
 import Home from './components/home'
 import Menu from './components/menu'
 import Project from './components/project'
@@ -20,7 +20,7 @@ class App extends React.Component {
         <HalfLayout exact path='/menu' component={Menu} />
         <FullLayout exact path='/about' component={About} />
         <FullLayout path='/selected-work/:id' component={Project}/>
-        <Route component={FourOhFour}/>
+        <FullLayout component={NotFound}/>
       </Switch>
     );
   }

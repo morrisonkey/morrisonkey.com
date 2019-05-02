@@ -120,7 +120,7 @@ class ProjectList extends React.Component {
     
     return (
       <div className="projects">
-        <h1 className="projects-title">Selected Work</h1>
+        <h4 className="projects-title">Selected Work</h4>
         <div className="projects-list">
           {projectElements}
         </div>
