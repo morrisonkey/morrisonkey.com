@@ -7,12 +7,14 @@ import './navbar.scss';
 
 const navbar = () => {
   return (
-    <nav className="navbar">
-      <Link to='/' className="key-logo">
+    <nav className="nav">
+      <Link to='/' className="nav-logo">
         <img src={logo} alt="logo" />
       </Link>
-      <Link to='/menu' className="menu-icon">
-        <img src={menu} alt="logo" />
+      <Link to='/menu' className="nav-burger">
+        <div className="nav-burger-bar bar1"></div>
+        <div className="nav-burger-bar bar2"></div>
+        <div className="nav-burger-bar bar3"></div>
       </Link>
     </nav>
   );

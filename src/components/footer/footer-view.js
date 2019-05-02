@@ -10,11 +10,21 @@ import './footer-view.scss'
 function FooterView() {
   return (
     <Footer>
-      <img src={instagram} className="social-logo" alt="logo" />
-      <img src={dribbble} className="social-logo" alt="logo" />
-      <img src={github} className="social-logo" alt="logo" />
-      <img src={linkedin} className="social-logo" alt="logo" />
-      <img src={medium} className="social-logo" alt="logo" />
+      <a href="https://www.instagram.com/morrison_key" target="_blank">
+        <img src={instagram} className="social-logo" alt="logo" />
+      </a>
+      <a href="https://dribbble.com/morrison_key" target="_blank">
+        <img src={dribbble} className="social-logo" alt="logo" />
+      </a>
+      <a href="https://github.com/morrison-key" target="_blank">
+        <img src={github} className="social-logo" alt="logo" />
+      </a>
+      <a href="https://www.linkedin.com/in/morrison-key/" target="_blank">
+        <img src={linkedin} className="social-logo" alt="logo" />
+      </a>
+      <a href="https://medium.com/@morrison_key" target="_blank">
+        <img src={medium} className="social-logo" alt="logo" />
+      </a>
       <Container className="copywrite-container">
         <Content className="copywrite-content">
           &copy;2019 Morrison Key

@@ -1,12 +1,80 @@
-.projects-list-card {
+.project-card {
   min-height: 100vh;
   text-align: left;
-  
-  .title {
+  width: 70vw;
+  margin: 0 auto;
+  padding-top: 100px;
+
+  &-text{
+    z-index: 3;
+    position: absolute;
+  }
+
+  &-title {
     color: black;
     font-family: 'Gilroy';
     font-weight: 700;
     font-size: 72px;
     letter-spacing: 2px;
+  }
+
+  &-skill {
+    color: black;
+    font-family: 'Gilroy';
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 8px;
+  }
+
+  &-description {
+    color: black;
+    font-family: 'Gilroy';
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
+
+  &-link {
+    color: black;
+    font-size: 24px;
+    letter-spacing: 2px;
+  }
+
+  &-image {
+    width: 900px;
+    height: 600px;
+    float: right;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+    &-filter {
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(0.35turn, RGBA(255,255,255, 0.25), transparent);
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+      opacity: 0;
+      -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+      transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    &:hover {
+      -webkit-transform: scale(1.02, 1.02);
+      transform: scale(1.02, 1.02);
+    }
+    
+    &:hover::after {
+        opacity: 1;
+    }
   }
 }
