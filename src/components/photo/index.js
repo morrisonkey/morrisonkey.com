@@ -1,1 +1,1 @@
-export {default} from '.photo/-view.js'
+export {default} from './photo-view.js'

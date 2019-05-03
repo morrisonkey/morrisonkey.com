@@ -8,7 +8,7 @@ import './navbar.scss';
 const navbar = () => {
   return (
     <nav className="nav">
-      <Link to='/' className="nav-logo">
+      <Link to='/selected-works' className="nav-logo">
         <img src={logo} alt="logo" />
       </Link>
       <Link to='/menu' className="nav-burger">

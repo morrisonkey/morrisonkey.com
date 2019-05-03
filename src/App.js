@@ -1,7 +1,7 @@
 import React from 'react'
 import { Switch, Route } from 'react-router-dom';
 import './App.scss'
-import About from './components/about'
+import Photo from './components/photo'
 import NotFound from './components/404'
 import Home from './components/home'
 import Menu from './components/menu'
@@ -18,8 +18,8 @@ class App extends React.Component {
         <FullLayout exact path='/' component={Home} />
         <FullLayout exact path='/selected-works' component={ProjectList} />
         <HalfLayout exact path='/menu' component={Menu} />
-        <FullLayout exact path='/about' component={About} />
         <FullLayout path='/selected-work/:id' component={Project}/>
+        <HalfLayout path='/photograph/:id' component={Photo} />
         <FullLayout component={NotFound}/>
       </Switch>
     );

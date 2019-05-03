@@ -3,11 +3,17 @@
   text-align: left;
   width: 70vw;
   margin: 0 auto;
-  padding-top: 100px;
+  padding: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
 
   &-text{
     z-index: 3;
     position: absolute;
+    left: 14vw;
+    transform: translateY(-50%);
   }
 
   &-title {
@@ -15,7 +21,7 @@
     font-family: 'Gilroy';
     font-weight: 700;
     font-size: 72px;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
   }
 
   &-skill {
@@ -33,12 +39,12 @@
     font-weight: 300;
     font-size: 16px;
     letter-spacing: 2px;
-    max-width: 300px;;
+    max-width: 200px;;
   }
 
   &-link {
     color: black;
-    font-size: 24px;
+    font-size: 12px;
     letter-spacing: 2px;
   }
 
@@ -49,6 +55,10 @@
     // box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
     -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 
     &-filter {
       width: 100%;
@@ -82,7 +92,7 @@
 
   .reincarnage {
     position: relative;
-    animation: float-up 24s ease-in-out infinite;
+    animation: float-up 12s ease-in-out infinite;
 
     &-image {
       position: absolute;
@@ -108,9 +118,40 @@
       animation: float-down 18s ease-in-out infinite;
     }
     &-bird {
-      top: 175px;
-      left: 350px;
-      animation: float-down 24s ease-in-out infinite;
+      top: 220px;
+      left: 500px;
+      width: 273.5px;
+      height: 250px;
+      -webkit-animation: play .56s steps(4) infinite;
+      -moz-animation: play .56s steps(4) infinite;
+      -ms-animation: play .56s steps(4) infinite;
+      -o-animation: play .56s steps(4) infinite;
+      animation: play .56s steps(4) infinite;
+
+      @-webkit-keyframes play {
+        from { background-position:    0px; }
+          to { background-position: -1292px; }
+      }
+     
+      @-moz-keyframes play {
+          from { background-position:    0px; }
+            to { background-position: -1292px; }
+      }
+     
+      @-ms-keyframes play {
+          from { background-position:    0px; }
+            to { background-position: -1292px; }
+      }
+     
+      @-o-keyframes play {
+          from { background-position:    0px; }
+            to { background-position: -1292px; }
+      }
+      
+      @keyframes play {
+          from { background-position:    0px; }
+            to { background-position: -1358px; }
+      }
     }
   }
 }

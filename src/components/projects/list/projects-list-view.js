@@ -1,41 +1,42 @@
 import React from 'react';
+import ReactPageScroller from "react-page-scroller";
 import { Link } from 'react-router-dom';
 import ProjectCard from '../card'
 import './projects-list.scss'
 
 export const projects = [
   {
-    id: 'briefly',
-    live: true,
-    skill: "WEB DESIGN",
-    title: "Briefly",
-    description: "Get briefed, on the fly.",
-    webURL: "",
-    darkColor: "#6D80A4",
-    lightColor: "",
-    imageURL: "www.morrisonkey.com"
-  },
-  {
-    id: 'invision-teamweek',
+    id: 'teamweek',
     live: true,
     skill: "ANIMATIONS",
-    title: "InVision Teamweek",
+    title: "Team Week",
     description: "The InVision staff hit the road.",
     webURL: "",
     darkColor: "#FF3468",
     lightColor: "",
-    imageURL: "www.morrisonkey.com"
+    imageURL: true
   },
   {
-    id: 'sound-cloud-fan-funding',
+    id: 'briefly',
+    live: true,
+    skill: "WEB DESIGN",
+    title: "Briefly App",
+    description: "Get briefed, on the fly.",
+    webURL: "",
+    darkColor: "#6D80A4",
+    lightColor: "",
+    imageURL: true
+  },
+  {
+    id: 'soundcloud',
     live: true,
     skill: "FEATURE DESIGN",
-    title: "Sound Cloud Fan-Funded Content",
+    title: "Fan Funding",
     description: "Back your favorite artists and enjoy more content from them.",
     webURL: "",
     darkColor: "#FE3903",
     lightColor: "",
-    imageURL: "www.morrisonkey.com"
+    imageURL: true
   },
   {
     id: 'reincarnage',
@@ -46,7 +47,7 @@ export const projects = [
     webURL: "",
     darkColor: "#41AFEA",
     lightColor: "",
-    imageURL: "www.morrisonkey.com"
+    imageURL: false
   },
   {
     id: 'smart-people',
@@ -57,7 +58,7 @@ export const projects = [
     webURL: "",
     darkColor: "#28BA9B",
     lightColor: "",
-    imageURL: "www.morrisonkey.com"
+    imageURL: false
   },
   {
     id: 'leadfeeder',
@@ -66,9 +67,9 @@ export const projects = [
     title: "Leadfeeder",
     description: "Programming a SAAS: The Leadfeeder B2B sales lead generator.",
     webURL: "www.leadfeeder.com",
-    darkColor: "#31A2C5",
+    darkColor: "#775AB7",
     lightColor: "",
-    imageURL: "www.leadfeeder.com"
+    imageURL: true
   },
   {
     id: 'nsr-invest',
@@ -79,7 +80,7 @@ export const projects = [
     webURL: "www.nsrinvest.com",
     darkColor: "#FBC24A",
     lightColor: "",
-    imageURL: "www.morrisonkey.com"
+    imageURL: false
   },
   {
     id: 'nycda',
@@ -90,7 +91,7 @@ export const projects = [
     webURL: "www.nycda.com",
     darkColor: "#FECB09",
     lightColor: "",
-    imageURL: "www.morrisonkey.com"
+    imageURL: false
   },
   {
     id: 'imperative',
@@ -101,7 +102,7 @@ export const projects = [
     webURL: "",
     darkColor: "#5564A8",
     lightColor: "",
-    imageURL: "www.morrisonkey.com"
+    imageURL: false
   },
 ]
 
@@ -120,9 +121,15 @@ class ProjectList extends React.Component {
     
     return (
       <div className="projects">
-        <h4 className="projects-title">Selected Work</h4>
+        <h4 className="projects-title">SELECTED WORKS</h4>
         <div className="projects-list">
-          {projectElements}
+          <ReactPageScroller
+            animationTimer={800}
+            transitionTimingFunction={"ease-out"}
+            ref={c => this.reactPageScroller = c}
+          >
+            {projectElements}
+          </ReactPageScroller>
         </div>
       </div>
     )

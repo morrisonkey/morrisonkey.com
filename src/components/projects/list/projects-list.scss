@@ -1,10 +1,21 @@
+.hero-body {
+  padding-top: 0!important;
+}
+
+.projects-list {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .projects-title {
+  color: black;
   font-family: 'Gilroy';
-  font-weight: 700;
-  font-size: 18px;
+  font-weight: 300;
+  font-size: 14px;
   letter-spacing: 2px;
   position: fixed;
-  left: -26px;
+  left: -27px;
   top: 50%;
   transform: rotate(-90deg)
 }
