@@ -1,41 +1,195 @@
 import React from 'react';
-import img1 from '../../assets/images/img-2.jpg'
-import img2 from '../../assets/images/img-7.jpg'
-import img3 from '../../assets/images/img-1.jpg'
+import ReactPageScroller from "react-page-scroller";
+import img1 from '../../assets/images/img1.jpg';
+import img2 from '../../assets/images/img2.jpg';
+import img3 from '../../assets/images/img3.jpg';
+import img4 from '../../assets/images/img4.jpg';
+import img5 from '../../assets/images/img5.jpg';
+import img7 from '../../assets/images/img7.jpg';
+import img8 from '../../assets/images/img8.jpg';
+import img9 from '../../assets/images/img9.jpg';
+import img13 from '../../assets/images/img13.jpg';
+import img14 from '../../assets/images/img14.jpg';
+import img15 from '../../assets/images/img15.jpg';
+import img16 from '../../assets/images/img16.jpg';
+import img20 from '../../assets/images/img20.jpg';
+import img24 from '../../assets/images/img24.jpg';
+import '../projects/list/projects-list.scss';
 import '../projects/card/projects-card.scss';
+import './photo.scss';
 
-const ProjectCard = (props) => {
-  return (
-    <div>
-      <div className="project-card">
-        <div class="project-card-text">
-          <h2 className="project-card-title">&nbsp; &nbsp; &nbsp; Hanoi</h2>
-          <h5 className="project-card-skill">&nbsp; &nbsp; Vietnam</h5>
-        </div> 
-        <div className="project-card-image">
-          <img src={img1} alt="img" />
+class PhotoScroller extends React.Component {
+  render () {
+
+    console.log('hello');
+    return (
+      <div className="projects">
+        <h4 className="projects-title white">PHOTOGRAPHS</h4>
+        <div className="projects-list">
+          <ReactPageScroller
+            animationTimer={800}
+            transitionTimingFunction={"ease-out"}
+            ref={c => this.reactPageScroller = c}
+          >
+            <div className="project-card-container">
+              <div className="project-card">
+                <div class="width-full project-card-text">
+                  <h2 className="width-full project-card-title white">Akureyri</h2>
+                  <h5 className="width-full photo-skill project-card-skill white">ICELAND</h5>
+                </div> 
+                <div className="no-hover project-card-image">
+                  <img src={img4} className="no-hover project-card-image" alt="img" />
+                </div>
+              </div>
+            </div>
+            <div className="project-card-container">
+              <div className="project-card">
+                <div class="width-full project-card-text">
+                  <h2 className="width-full project-card-title white">Cappadocia</h2>
+                  <h5 className="width-full photo-skill project-card-skill white">TURKEY</h5>
+                </div> 
+                <div className="no-hover project-card-image">
+                  <img src={img3} className="no-hover project-card-image" alt="img" />
+                </div>
+              </div>
+            </div>
+            <div className="project-card-container">
+              <div className="project-card">
+                <div class="width-full project-card-text">
+                  <h2 className="width-full project-card-title white">Hanoi City</h2>
+                  <h5 className="width-full photo-skill project-card-skill white">VIETNAM</h5>
+                </div> 
+                <div className="no-hover project-card-image">
+                  <img src={img2} className="no-hover project-card-image" alt="img" />
+                </div>
+              </div>
+            </div>
+            <div className="project-card-container">
+              <div className="project-card">
+                <div class="width-full project-card-text">
+                  <h2 className="width-full project-card-title white">Anchorage</h2>
+                  <h5 className="width-full photo-skill project-card-skill white">ALASKA</h5>
+                </div> 
+                <div className="no-hover project-card-image">
+                  <img src={img24} className="no-hover project-card-image" alt="img" />
+                </div>
+              </div>
+            </div>
+            <div className="project-card-container">
+              <div className="project-card">
+                <div class="width-full project-card-text">
+                  <h2 className="width-full project-card-title white">Gran Canaria</h2>
+                  <h5 className="width-full photo-skill project-card-skill white">SPAIN</h5>
+                </div> 
+                <div className="no-hover project-card-image">
+                  <img src={img1} className="no-hover project-card-image" alt="img" />
+                </div>
+              </div>
+            </div>
+            <div className="project-card-container">
+              <div className="project-card">
+                <div class="width-full project-card-text">
+                  <h2 className="width-full project-card-title white">Akureyri</h2>
+                  <h5 className="width-full photo-skill project-card-skill white">ICELAND</h5>
+                </div> 
+                <div className="no-hover project-card-image">
+                  <img src={img15} className="no-hover project-card-image" alt="img" />
+                </div>
+              </div>
+            </div>
+            <div className="project-card-container">
+              <div className="project-card">
+                <div class="width-full project-card-text">
+                  <h2 className="width-full project-card-title white">Bangkok</h2>
+                  <h5 className="width-full photo-skill project-card-skill white">THAILAND</h5>
+                </div> 
+                <div className="no-hover project-card-image">
+                  <img src={img20} className="no-hover project-card-image" alt="img" />
+                </div>
+              </div>
+            </div>
+            <div className="project-card-container">
+              <div className="project-card">
+                <div class="width-full project-card-text">
+                  <h2 className="width-full project-card-title white">Gili Islands</h2>
+                  <h5 className="width-full photo-skill project-card-skill white">INDONESIA</h5>
+                </div> 
+                <div className="no-hover project-card-image">
+                  <img src={img14} className="no-hover project-card-image" alt="img" />
+                </div>
+              </div>
+            </div>
+            <div className="project-card-container">
+              <div className="project-card">
+                <div class="width-full project-card-text">
+                  <h2 className="width-full project-card-title white">Hoi An Old Town</h2>
+                  <h5 className="width-full photo-skill project-card-skill white">VIETNAM</h5>
+                </div> 
+                <div className="no-hover project-card-image">
+                  <img src={img13} className="no-hover project-card-image" alt="img" />
+                </div>
+              </div>
+            </div>
+            <div className="project-card-container">
+              <div className="project-card">
+                <div class="width-full project-card-text">
+                  <h2 className="width-full project-card-title white">Reykjavik</h2>
+                  <h5 className="width-full photo-skill project-card-skill white">ICELAND</h5>
+                </div> 
+                <div className="no-hover project-card-image">
+                  <img src={img5} className="no-hover project-card-image" alt="img" />
+                </div>
+              </div>
+            </div>
+            <div className="project-card-container">
+              <div className="project-card">
+                <div class="width-full project-card-text">
+                  <h2 className="width-full project-card-title white">Kenai Fjords</h2>
+                  <h5 className="width-full photo-skill project-card-skill white">ALASKA</h5>
+                </div> 
+                <div className="no-hover project-card-image">
+                  <img src={img7} className="no-hover project-card-image" alt="img" />
+                </div>
+              </div>
+            </div>
+            <div className="project-card-container">
+              <div className="project-card">
+                <div class="width-full project-card-text">
+                  <h2 className="width-full project-card-title white">Richmond</h2>
+                  <h5 className="width-full photo-skill project-card-skill white">VIRGINIA</h5>
+                </div> 
+                <div className="no-hover project-card-image">
+                  <img src={img16} className="no-hover project-card-image" alt="img" />
+                </div>
+              </div>
+            </div>
+            <div className="project-card-container">
+              <div className="project-card">
+                <div class="width-full project-card-text">
+                  <h2 className="width-full project-card-title white">Lao Chai Village</h2>
+                  <h5 className="width-full photo-skill project-card-skill white">VIETNAM</h5>
+                </div> 
+                <div className="no-hover project-card-image">
+                  <img src={img9} className="no-hover project-card-image" alt="img" />
+                </div>
+              </div>
+            </div>
+            <div className="project-card-container">
+              <div className="project-card">
+                <div class="width-full project-card-text">
+                  <h2 className="width-full project-card-title white">Reykjavik</h2>
+                  <h5 className="width-full photo-skill project-card-skill white">ICELAND</h5>
+                </div> 
+                <div className="no-hover project-card-image">
+                  <img src={img8} className="no-hover project-card-image" alt="img" />
+                </div>
+              </div>
+            </div>
+          </ReactPageScroller>
         </div>
       </div>
-      <div className="project-card">
-        <div class="project-card-text">
-          <h2 className="project-card-title">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Bali</h2>
-          <h5 className="project-card-skill">&nbsp; &nbsp; Indonesia</h5>
-        </div> 
-        <div className="project-card-image">
-          <img src={img2} alt="img" />
-        </div>
-      </div>
-      <div className="project-card">
-        <div class="project-card-text">
-          <h2 className="project-card-title">Grand Canaria</h2>
-          <h5 className="project-card-skill">&nbsp; &nbsp; Spain</h5>
-        </div> 
-        <div className="project-card-image">
-          <img src={img3} alt="img" />
-        </div>
-      </div>
-    </div>
-  )
+    )
+  }
 }
 
-export default ProjectCard;
+export default PhotoScroller;

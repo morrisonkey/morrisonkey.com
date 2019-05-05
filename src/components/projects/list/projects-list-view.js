@@ -20,7 +20,7 @@ export const projects = [
     id: 'teamweek',
     live: true,
     skill: "ANIMATIONS",
-    title: "Team Week",
+    title: "InVision Studio",
     description: "Skill Showcase - Using InVision Studio, I created this microsite: an example of an internal company teaser for an employee work-away holiday. The company I focused on, InVisionApp Inc. themselves.",
     linkText: "VIEW PROTOTYPE",
     linked: true,
@@ -65,6 +65,18 @@ export const projects = [
     imageURL: true
   },
   {
+    id: 'nsrinvest',
+    live: true,
+    skill: "BRAND DESIGN",
+    title: "NSR Invest",
+    description: "Logo, site, and brand marketing: NSR Invest. I developed their full site including CMS video platform and helped design logos and company marketing merchandise during their launch.",
+    linkText: "GO TO WEBSITE",
+    linked: true,
+    darkColor: "#FBC24A",
+    lightColor: "",
+    imageURL: true
+  },
+  {
     id: 'smart-people',
     live: false,
     skill: "MOBILE APP DESIGN",
@@ -73,30 +85,6 @@ export const projects = [
     linkText: "VIEW PROJECT",
     linked: false,
     darkColor: "#28BA9B",
-    lightColor: "",
-    imageURL: false
-  },
-  {
-    id: 'nsr-invest',
-    live: false,
-    skill: "BRAND DESIGN",
-    title: "NSR Invest",
-    description: "Developing NSR Invest's branding, site, and video learning platform.",
-    linkText: "VIEW PROJECT",
-    linked: false,
-    darkColor: "#FBC24A",
-    lightColor: "",
-    imageURL: false
-  },
-  {
-    id: 'nycda',
-    live: false,
-    skill: "DEVELOPMENT",
-    title: "New York Code & Design Academy",
-    description: "Developing an online student and administrator platform for courses.",
-    linkText: "VIEW PROJECT",
-    linked: false,
-    darkColor: "#FECB09",
     lightColor: "",
     imageURL: false
   },

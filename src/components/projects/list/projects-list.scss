@@ -4,12 +4,6 @@
   padding-top: 0!important;
 }
 
-.projects-list {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
 .projects-title {
   color: black;
   font-family: 'Gilroy';
@@ -47,7 +41,7 @@
   }
 }
 
-@media only screen and (max-width: 8204px) {
+@media only screen and (max-width: 820px) {
   .projects-title {
     display: none;
   }

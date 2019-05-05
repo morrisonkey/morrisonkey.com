@@ -1,0 +1,31 @@
+.no-hover:hover {
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+
+.container-limitless {
+  height: 80vh!important;
+}
+
+.about-skill {
+  margin-left: 45px;
+}
+
+@media only screen and (max-width: 1216px) {
+  .about-skill {
+    margin-left: 38px;
+  }  
+}
+
+@media only screen and (max-width: 1024px) {
+  .about-skill {
+    margin-left: 30px;
+  }  
+}
+
+@media only screen and (max-width: 670px) {
+  .about-skill {
+    left: -55px;
+    width: 210px;
+  }  
+}

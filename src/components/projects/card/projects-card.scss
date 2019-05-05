@@ -4,7 +4,7 @@
   position: relative;
 
   &-container {
-    min-height: 100vh;
+    height: 100vh;
     text-align: left;
     width: 1176px;
     margin: 0 auto;
@@ -31,7 +31,9 @@
     font-size: 72px;
     letter-spacing: 4px;
     line-height: 1.02;
-    width: 480px;
+    white-space: -moz-pre; /* Firefox */
+    white-space: -o-pre; /* Opera */
+    white-space: pre; /* Chrome */
   }
 
   &-skill {
@@ -42,7 +44,9 @@
     font-size: 16px;
     letter-spacing: 8px;
     margin-left: 200px;
-    width: 240px;
+    white-space: -moz-pre; /* Firefox */
+    white-space: -o-pre; /* Opera */
+    white-space: pre; /* Chrome */
   }
 
   &-description {
@@ -62,7 +66,9 @@
     color: black;
     font-size: 12px;
     letter-spacing: 2px;
-    width: 160px;
+    white-space: -moz-pre; /* Firefox */
+    white-space: -o-pre; /* Opera */
+    white-space: pre; /* Chrome */
   }
 
   &-image {
@@ -218,7 +224,6 @@
     &-title {
       font-size: 60px;
       letter-spacing: 3px;
-      width: 380px;
     }
 
     &-skill {
@@ -229,7 +234,7 @@
     &-description {
       bottom: 100px;
       font-size: 14px;
-      width: 166px;
+      width: 180px;
     }
   
     &-link {
@@ -246,6 +251,9 @@
     }
 
     .reincarnage {
+      -webkit-transform: scale(.86, .86);
+      transform: scale(.86, .86);
+
       &-large-cloud {
         top: 0;
         right: 14px;
@@ -253,7 +261,7 @@
       }
       &-medium-cloud {
         top: 258px;
-        left: -40px;
+        left: -20px;
         width: 258px;
       }
       &-small-cloud {
@@ -264,6 +272,8 @@
       &-bird {
         top: 160px;
         left: 340px;
+        -webkit-transform: scale(.86, .86);
+        transform: scale(.86, .86);
       }
     }
   }
@@ -282,23 +292,21 @@
     }
   
     &-title {
-      font-size: 48px;
-      letter-spacing: 2px;
-      width: 300px;
+      font-size: 46px;
+      letter-spacing: 1px;
     }
   
     &-skill {
       font-size: 14px;
       letter-spacing: 4px;
       margin-left: 122px;
-      width: 170px;
     }
   
     &-description {
       bottom: 50px;
       font-size: 14px;
       line-height: 16px;
-      width: 166px;
+      width: 158px;
     }
   
     &-link {
@@ -317,17 +325,19 @@
       }
       &-medium-cloud {
         top: 162px;
-        left: -27px;
+        left: 10px;
         width: 164px;
       }
       &-small-cloud {
-        top: 8px;
+        top: 30px;
         left: 40px;
         width: 115px;
       }
       &-bird {
         top: 50px;
-        left: 100px;
+        left: 160px;
+        -webkit-transform: scale(.54, .54);
+        transform: scale(.54, .54);
       }
     }
   }
@@ -351,7 +361,6 @@
       top: -60px;
       font-size: 48px;
       letter-spacing: 1px;
-
     }
   
     &-skill {
@@ -363,6 +372,8 @@
       background: black;
       color: white;
       padding: 1px 12px;
+      width: 140px;
+      text-align: center;
     }
   
     &-description {
@@ -382,6 +393,15 @@
     &-image {
       height: 360px;
       width: 540px;
+    }
+    .reincarnage {
+      &-small-cloud {
+        display: none;
+      }
+      &-bird {
+        -webkit-transform: scale(.68, .68);
+        transform: scale(.68, .68);
+      }
     }
   }
 }
@@ -429,9 +449,14 @@
         left: 0;
         width: 140px;
       }
+      &-small-cloud {
+        display: none;
+      }
       &-bird {
         top: 20px;
         left: 80px;
+        -webkit-transform: scale(.42, .42);
+        transform: scale(.42, .42);
       }
     }
   }
@@ -461,7 +486,7 @@
     }
   
     &-link {
-      top: 320px;
+      top: 360px;
     }
   
     &-image {
@@ -483,6 +508,8 @@
       &-bird {
         top: 0;
         left: 20px;
+        -webkit-transform: scale(.36, .36);
+        transform: scale(.36, .36);
       }
     }
   }

@@ -4,10 +4,7 @@ import Navbar from './navbar'
 import { Route, Redirect } from 'react-router-dom'
 import { Hero } from 'react-bulma-components/full'
  
-const FullLayout = ({ component: Component, ...rest }) => {
-  console.log("RouteLayout");
-  //todo: logic for validate user 
-  
+const HalfLayout = ({ component: Component, ...rest }) => {
   return (
     <Route {...rest} render={matchProps => (
       <Hero size="fullheight" className="App">
@@ -23,4 +20,4 @@ const FullLayout = ({ component: Component, ...rest }) => {
   )
 };
  
-export default FullLayout;
+export default HalfLayout;

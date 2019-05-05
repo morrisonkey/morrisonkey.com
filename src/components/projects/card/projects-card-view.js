@@ -5,6 +5,7 @@ import briefly from '../../../assets/images/briefly.png';
 import largeCloud from '../../../assets/images/cloud-large.png';
 import leadfeeder from '../../../assets/images/leadfeeder.png';
 import mediumCloud from '../../../assets/images/cloud-medium.png';
+import nsrinvest from '../../../assets/images/nsrinvest.png';
 import reincarnage from '../../../assets/images/reincarnage.png';
 import smallCloud from '../../../assets/images/cloud-small.png';
 import soundcloud from '../../../assets/images/soundcloud.png';
@@ -33,6 +34,9 @@ const ProjectCard = (props) => {
     } else if (id === 'leadfeeder') {
       bg = `url(${leadfeeder}) no-repeat center center`;
       img = leadfeeder;
+    } else if (id === 'nsrinvest') {
+      bg = `url(${nsrinvest}) no-repeat center center`;
+      img = nsrinvest;
     }
   }
 
@@ -46,7 +50,7 @@ const ProjectCard = (props) => {
           {linked && <Link to={id} target="_blank" className="project-card-link">{linkText}</Link>}
         </div> 
 
-        <Link to={`/selected-work/${id}`}>
+        <Link to={id} target="_blank">
           <div className="project-card-image" style={{background: bg}}>
             <img src={img} className="project-card-image" alt="img" />
             {id ==='reincarnage' &&

@@ -29,3 +29,18 @@
 .page {
     padding: 0 24px;
 }
+
+.bg-white {
+  background-color: white!important;
+}
+
+.bg-black {
+  background-color: black;
+}
+
+.white {
+  color: white!important;
+  &:hover {
+    color: rgb(54, 78, 79)!important;
+  }
+}

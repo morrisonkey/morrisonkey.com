@@ -1,9 +1,5 @@
-.full-image {
-  position: absolute;
-  width: 100vw;
-  overflow: hidden;
-}
-
-.main-content {
-  overflow: hidden;
+@media only screen and (max-width: 670px) {
+  .photo-skill {
+    width: 90px;
+  }  
 }
