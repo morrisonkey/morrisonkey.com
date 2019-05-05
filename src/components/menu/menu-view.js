@@ -10,7 +10,6 @@ const Menu = (props) => {
         <li><Link to='/' className="menu-link">Home</Link></li>
         <li><Link to='/selected-works' className="menu-link">Projects</Link></li>
         <li><Link to='/about' className="menu-link">About</Link></li>
-        <li><Link to='/game' className="menu-link">Play A Game</Link></li>
         <li><Link to='/photograph/0' className="menu-link">Photography</Link></li>
       </ul>
     </nav>

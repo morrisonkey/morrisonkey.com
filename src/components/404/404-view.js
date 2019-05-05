@@ -6,10 +6,10 @@ const FourOhFour = (props) => {
   console.log(props)
   
   const messages = [
-    "I'm still coding this page.",
-    "File not found.",
-    "Are you lost?",
-    "Page does not exist."
+    `'${props.location.pathname}' page not found`,
+    "I'm still coding that page.",
+    "Under construction.",
+    "Are you lost?"
   ]
 
   return (

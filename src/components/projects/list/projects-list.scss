@@ -1,3 +1,5 @@
+
+
 .hero-body {
   padding-top: 0!important;
 }
@@ -18,4 +20,35 @@
   left: -27px;
   top: 50%;
   transform: rotate(-90deg)
+}
+
+@media only screen and (max-width: 1342px) {
+  .projects-title {
+    display: none;
+  }
+}
+
+
+@media only screen and (max-width: 1216px) {
+  .projects-title {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 1124px) {
+  .projects-title {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .projects-title {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 8204px) {
+  .projects-title {
+    display: none;
+  }
 }

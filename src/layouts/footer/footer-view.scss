@@ -34,3 +34,20 @@
     }
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .footer {
+  
+    .copywrite{
+      display: none;
+    }
+  
+    .social-logo {
+      float: unset;
+      margin: 1rem;
+      img {
+        width: 16px;
+      }
+    }
+  }  
+}

@@ -20,6 +20,11 @@ class App extends React.Component {
         <HalfLayout exact path='/menu' component={Menu} />
         <FullLayout path='/selected-work/:id' component={Project}/>
         <HalfLayout path='/photograph/:id' component={Photo} />
+        <Route exact path='/teamweek' component={() => { window.location = 'https://projects.invisionapp.com/prototype/teamweek-mobile-cjuy1ccny0093gw015u6u6a8c'; return null;} }/>
+        <Route exact path='/briefly' component={() => { window.location = 'https://invis.io/P3RUPQ29V6J'; return null;} }/>
+        <Route exact path='/soundcloud' component={() => { window.location = 'https://invis.io/SBRHYFEFC7M'; return null;} }/>
+        <Route exact path='/reincarnage' component={() => { window.location = 'http://reincarnage.herokuapp.com'; return null;} }/>
+        <Route exact path='/leadfeeder' component={() => { window.location = 'https://leadfeeder.com'; return null;} }/>
         <FullLayout component={NotFound}/>
       </Switch>
     );
