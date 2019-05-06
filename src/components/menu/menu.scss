@@ -16,7 +16,7 @@
 
   .black-half {
     background-color: black;
-    height: 58.5vh;
+    height: 52vh;
     width: 100%;
     position: absolute;
     bottom: 0;
@@ -31,10 +31,6 @@
     &-link {
       font-size: 32px;
       line-height: 64px;
-    }
-
-    .black-half {
-      height: 56vh;
     }
   }
 }

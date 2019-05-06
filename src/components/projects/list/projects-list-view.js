@@ -2,6 +2,7 @@ import React from 'react';
 import ReactPageScroller from "react-page-scroller";
 import ProjectCard from '../card'
 import './projects-list.scss'
+import downArrow from '../../../assets/logos/arrow-down.png'
 
 export const projects = [
   {
@@ -112,6 +113,18 @@ class ProjectList extends React.Component {
         <ProjectCard data={el} key={el.id}/>
       )
     });
+
+    projectElements.unshift(
+      <div className="intro">
+        <div>
+          <p>Hello. My name is Key. I'm a...</p>
+          <p>Designer <span className="green-text">|</span> Developer <span className="green-text">|</span> Mentor</p>
+          <br/>
+          <p>Check out my portfolio below and<span><a href="mailto:mr.morrison.key@gmail.com" className="green-text"> email me </a></span>if you need any help.</p>
+        </div>
+        <img className="down-arrow" src={downArrow}/>
+      </div>
+    )
     
     return (
       <div className="projects">

@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactPageScroller from "react-page-scroller";
 import { Link } from 'react-router-dom';
 import '../projects/list/projects-list.scss';
 import '../projects/card/projects-card.scss';
@@ -17,7 +16,7 @@ class About extends React.Component {
                   <h2 className="project-card-title">Morrison Key</h2>
                   <h5 className="about-skill project-card-skill">DESIGNER, DEVELOPER, MENTOR</h5>
                   <p className="project-card-description">One horn short of a unicorn. I am currently a UX Designer seeking new opportunities in Berlin. In the past I have been a travelling Developer and Coding Teacher / Mentor in Los Angeles and New York.</p>
-                  <Link to="mailto:mr.morrison.key@gmail.com" target="_blank" className="project-card-link">EMAIL ME</Link>
+                  <Link to='/cv' className="project-card-link">VIEW MY CV</Link>
                 </div> 
                 <div className="no-hover project-card-image">
                   <img src={img} alt="img" />

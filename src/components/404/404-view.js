@@ -27,7 +27,7 @@ const FourOhFour = (props) => {
                 text={messages} //text=["Hello.", "World!"]
               />
             </h4>
-            <a href="/">
+            <a href="/selected-works">
               <button>GO TO HOME PAGE</button>
             </a>
             <p>

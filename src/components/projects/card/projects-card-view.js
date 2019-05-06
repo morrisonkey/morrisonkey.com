@@ -20,22 +20,16 @@ const ProjectCard = (props) => {
 
   if (imageURL) {
     if (id === 'briefly') {
-      bg = `url(${briefly}) no-repeat center center`;
       img = briefly;
     } else if (id === 'teamweek') {
-      bg = `url(${teamweek}) no-repeat center center`;
       img = teamweek;
     } else if (id === 'soundcloud') {
-      bg = `url(${soundcloud}) no-repeat center center`;
       img = soundcloud;
     } else if (id === 'reincarnage') {
-      bg = `url(${reincarnage}) no-repeat center center`;
       img = reincarnage;
     } else if (id === 'leadfeeder') {
-      bg = `url(${leadfeeder}) no-repeat center center`;
       img = leadfeeder;
     } else if (id === 'nsrinvest') {
-      bg = `url(${nsrinvest}) no-repeat center center`;
       img = nsrinvest;
     }
   }
@@ -51,7 +45,7 @@ const ProjectCard = (props) => {
         </div> 
 
         <Link to={id} target="_blank">
-          <div className="project-card-image" style={{background: bg}}>
+          <div className="project-card-image">
             <img src={img} className="project-card-image" alt="img" />
             {id ==='reincarnage' &&
               <div className="reincarnage">
