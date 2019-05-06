@@ -131,7 +131,7 @@ class ProjectList extends React.Component {
         <h4 className="projects-title">SELECTED WORKS</h4>
         <div className="projects-list">
           <ReactPageScroller
-            animationTimer={800}
+            animationTimer={900}
             transitionTimingFunction={"ease-out"}
             ref={c => this.reactPageScroller = c}
           >

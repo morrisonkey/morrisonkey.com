@@ -1,5 +1,6 @@
 .hero-body {
   padding-top: 0!important;
+  padding-bottom: 0!important;
 }
 
 .intro {
@@ -57,5 +58,9 @@
 @media only screen and (max-width: 820px) {
   .projects-title {
     display: none;
+  }
+  .down-arrow {
+    width: 32px!important;
+    bottom: 180px!important;
   }
 }

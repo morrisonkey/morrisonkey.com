@@ -404,10 +404,6 @@
 @media only screen and (max-width: 560px) {
   .project-card {
     width: 405px;
-
-    &-container {
-      width: 100vw;
-    }
   
     &-title {
       position: absolute;
@@ -460,9 +456,10 @@
 @media only screen and (max-width: 430px) {
   .project-card {
     width: 315px;
+    margin-bottom: 80px;
 
     &-container {
-      width: 100vw;
+      height: 100vh;
     }
   
     &-title {
@@ -514,15 +511,22 @@
 @media only screen and (max-width: 359px) {
   .project-card {
     width: 270px;
+    margin-bottom: 24px;
+
+    &-title {
+      position: absolute;
+      top: -30px;
+      font-size: 24px;
+    }
   
     &-description {
-      top: 200px;
+      top: 190px;
       width: 250px;
       line-height: 16px;
     }
   
     &-link {
-      top: 290px;
+      top: 270px;
     }
   
     &-image {
