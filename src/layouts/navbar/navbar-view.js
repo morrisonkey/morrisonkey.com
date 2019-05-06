@@ -8,7 +8,7 @@ import './navbar.scss';
 const navbar = (props) => {
   return (
     <nav className="nav">
-      <Link to='/selected-works' className="nav-logo">
+      <Link to='/' className="nav-logo">
         {!props.black && <img src={logoBlack} alt="logo" />}
         {props.black && <img src={logoWhite} alt="logo" />}
       </Link>

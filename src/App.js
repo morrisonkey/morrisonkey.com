@@ -18,10 +18,9 @@ class App extends React.Component {
     console.log(this.props);
     return (
       <Switch>
-        <FullLayout exact path='/' component={Home} />
         <FullLayout exact path='/about' component={About} />
         <BlackLayout exact path='/cv' component={Cv} />
-        <FullLayout exact path='/selected-works' component={ProjectList} />
+        <FullLayout exact path='/' component={ProjectList} />
         <HalfLayout exact path='/menu' component={Menu} />
         <FullLayout path='/selected-work/:id' component={Project}/>
         <BlackLayout path='/photos' component={PhotoScroller} />
