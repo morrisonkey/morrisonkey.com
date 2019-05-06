@@ -2,6 +2,10 @@
   "name": "morrisonkey.com",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "npm": "6.7.0",
+    "node": "11.10.1"
+  },
   "dependencies": {
     "gh-pages": "^2.0.1",
     "node-sass": "^4.12.0",
