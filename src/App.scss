@@ -38,11 +38,15 @@
   background-color: black;
 }
 
-.white {
+.white-link {
   color: white!important;
   &:hover {
     color: rgb(54, 78, 79)!important;
   }
+}
+
+.white {
+  color: white!important;
 }
 
 .green-text {
