@@ -143,17 +143,6 @@ class PhotoScroller extends React.Component {
             <div className="project-card-container">
               <div className="project-card">
                 <div class="width-full project-card-text">
-                  <h2 className="width-full project-card-title white">Reykjavik</h2>
-                  <h5 className="width-full photo-skill project-card-skill white">ICELAND</h5>
-                </div> 
-                <div className="no-hover project-card-image">
-                  <img src={img5} className="no-hover project-card-image" alt="img" />
-                </div>
-              </div>
-            </div>
-            <div className="project-card-container">
-              <div className="project-card">
-                <div class="width-full project-card-text">
                   <h2 className="width-full project-card-title white">Kenai Fjords</h2>
                   <h5 className="width-full photo-skill project-card-skill white">ALASKA</h5>
                 </div> 
@@ -191,7 +180,7 @@ class PhotoScroller extends React.Component {
                   <h5 className="width-full photo-skill project-card-skill white">ICELAND</h5>
                 </div> 
                 <div className="no-hover project-card-image">
-                  <img src={img8} className="no-hover project-card-image" alt="img" />
+                  <img src={img5} className="no-hover project-card-image" alt="img" />
                 </div>
               </div>
             </div>

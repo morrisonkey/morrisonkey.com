@@ -2,7 +2,7 @@ import React from 'react';
 import ReactPageScroller from "react-page-scroller";
 import ProjectCard from '../card'
 import './projects-list.scss'
-import downArrow from '../../../assets/logos/arrow-down-0.png'
+import downArrow from '../../../assets/logos/arrow-down.png'
 
 export const projects = [
   {
