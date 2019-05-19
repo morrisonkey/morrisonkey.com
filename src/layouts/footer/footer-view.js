@@ -7,11 +7,11 @@ import linkedin from '../../assets/logos/linkedin-logo.svg';
 import medium from '../../assets/logos/medium-logo.svg';
 import './footer-view.scss'
 
-function FooterView() {
+function FooterView(props) {
   return (
     <Footer>
       <div className="copywrite">
-        <p className="copywrite-text">&copy;2019 Morrison Key</p>
+        <p className="copywrite-text">&copy;2019 M.Key, Made in React</p>
       </div>
       <a href="https://www.instagram.com/morrison_key" target="_blank" className="social-logo">
         <img src={instagram} alt="logo" />

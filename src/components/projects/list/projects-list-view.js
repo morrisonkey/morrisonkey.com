@@ -2,7 +2,7 @@ import React from 'react';
 import ReactPageScroller from "react-page-scroller";
 import ProjectCard from '../card'
 import './projects-list.scss'
-import downArrow from '../../../assets/logos/arrow-down.png'
+import downArrow from '../../../assets/logos/arrow-down-0.png'
 
 export const projects = [
   {
@@ -11,7 +11,7 @@ export const projects = [
     skill: "WEB DESIGN",
     title: "Briefly App",
     description: "Case Study - A solution for people who can't find the time to read full articles but still want to stay up to date. Briefly offers detailed summaries of trending articles. Responsive prototypes created in Sketch.",
-    linkText: "VIEW PROTOTYPE",
+    linkText: "READ MORE",
     linked: true,
     darkColor: "#6D80A4",
     lightColor: "",
@@ -117,10 +117,10 @@ class ProjectList extends React.Component {
     projectElements.unshift(
       <div className="intro">
         <div>
-          <p>Hello. My name is Key. I'm a...</p>
-          <p>Designer <span className="green-text">|</span> Developer <span className="green-text">|</span> Mentor</p>
+          <p>Hello<span class="coral-text">.</span> My name is Key<span class="coral-text">.</span> I<span class="coral-text">'</span>m a<span class="coral-text">...</span></p>
+          <p>Designer <span className="coral-text">|</span> Developer <span className="coral-text">|</span> Mentor</p>
           <br/>
-          <p>Check out my portfolio below and<span><a href="mailto:mr.morrison.key@gmail.com" className="green-text"> email me </a></span>if you need any help.</p>
+          <p>Check out my portfolio below and<span><a href="mailto:mr.morrison.key@gmail.com" className="coral-text"> email me </a></span>if you want to work together<span class="coral-text">.</span></p>
         </div>
         <img className="down-arrow" src={downArrow}/>
       </div>

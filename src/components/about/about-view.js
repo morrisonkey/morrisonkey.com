@@ -13,8 +13,24 @@ class About extends React.Component {
             <div className="project-card-container container-limitless">
               <div className="project-card">
                 <div class="project-card-text">
-                  <h2 className="project-card-title">Morrison Key</h2>
-                  <h5 className="about-skill project-card-skill">DESIGNER, DEVELOPER, MENTOR</h5>
+                  <h2 className="project-card-title">
+                    <span class="my-name-1">M</span>
+                    <span class="my-name-2">o</span>
+                    <span class="my-name-3">r</span>
+                    <span class="my-name-4">r</span>
+                    <span class="my-name-5 color-changing">i</span>
+                    <span class="my-name-6">s</span>
+                    <span class="my-name-7">o</span>
+                    <span class="my-name-8">n </span>
+                    <span class="my-name-9">K</span>
+                    <span class="my-name-10">e</span>
+                    <span class="my-name-11">y</span>
+                  </h2>
+                  <h5 className="about-skill project-card-skill white-text">
+                    <span class="color-changing-1">DESIGN</span>ER |
+                    <span class="color-changing-2"> DEVELOP</span>ER |
+                    <span class="color-changing-3"> MENTOR</span>
+                  </h5>
                   <p className="project-card-description">One horn short of a unicorn. I am currently a UX Designer seeking new opportunities in Berlin. In the past I have been a travelling Developer and Coding Teacher / Mentor in Los Angeles and New York.</p>
                   <Link to='/cv' className="project-card-link">VIEW MY CV</Link>
                 </div> 

@@ -15,7 +15,6 @@ import HalfLayout from './layouts/HalfLayout';
 
 class App extends React.Component {
   render () {
-    console.log(this.props);
     return (
       <Switch>
         <FullLayout exact path='/about' component={About} />

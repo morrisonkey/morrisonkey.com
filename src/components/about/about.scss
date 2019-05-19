@@ -27,5 +27,184 @@
   .about-skill {
     left: -55px;
     width: 210px;
+  }
+}
+
+@mixin styling($skillTextColor) {
+
+  @-webkit-keyframes color-change {
+    10% { color: black; }
+    20% { color: #E4BE87; }
+    30% { color: black; }
+    40% { color: black; }
+    50% { color: #5C9DE1; }
+    60% { color: black; }
+    70% { color: black; }
+    80% { color: #EA335B; }
+    90% { color: black; }
+    100% { color: black; }
+  }
+  @-moz-keyframes color-change {
+    10% { color: black; }
+    20% { color: #E4BE87; }
+    30% { color: black; }
+    40% { color: black; }
+    50% { color: #5C9DE1; }
+    60% { color: black; }
+    70% { color: black; }
+    80% { color: #EA335B; }
+    90% { color: black; }
+    100% { color: black; }
+  }
+  @-ms-keyframes color-change {
+    10% { color: black; }
+    20% { color: #E4BE87; }
+    30% { color: black; }
+    40% { color: black; }
+    50% { color: #5C9DE1; }
+    60% { color: black; }
+    70% { color: black; }
+    80% { color: #EA335B; }
+    90% { color: black; }
+    100% { color: black; }
+  }
+  @-o-keyframes color-change {
+    10% { color: black; }
+    20% { color: #E4BE87; }
+    30% { color: black; }
+    40% { color: black; }
+    50% { color: #5C9DE1; }
+    60% { color: black; }
+    70% { color: black; }
+    80% { color: #EA335B; }
+    90% { color: black; }
+    100% { color: black; }
   }  
+  @keyframes color-change {
+    10% { color: black; }
+    20% { color: #E4BE87; }
+    30% { color: black; }
+    40% { color: black; }
+    50% { color: #5C9DE1; }
+    60% { color: black; }
+    70% { color: black; }
+    80% { color: #EA335B; }
+    90% { color: black; }
+    100% { color: black; }
+  }
+
+  @-webkit-keyframes color-change-1 {
+    10% { color: $skillTextColor; }
+    20% { color: #E4BE87; }
+    30% { color: $skillTextColor; }
+  }
+  @-moz-keyframes color-change-1 {
+    10% { color: $skillTextColor; }
+    20% { color: #E4BE87; }
+    30% { color: $skillTextColor; }
+  }
+  @-ms-keyframes color-change-1 {
+    10% { color: $skillTextColor; }
+    20% { color: #E4BE87; }
+    30% { color: $skillTextColor; }
+  }
+  @-o-keyframes color-change-1 {
+    10% { color: $skillTextColor; }
+    20% { color: #E4BE87; }
+    30% { color: $skillTextColor; }
+  }  
+  @keyframes color-change-1 {
+    10% { color: $skillTextColor; }
+    20% { color: #E4BE87; }
+    30% { color: $skillTextColor; }
+  }
+  
+  @-webkit-keyframes color-change-2 {
+    40% { color: $skillTextColor; }
+    50% { color: #5C9DE1; }
+    60% { color: $skillTextColor; }
+  }
+  @-moz-keyframes color-change-2 {
+    40% { color: $skillTextColor; }
+    50% { color: #5C9DE1; }
+    60% { color: $skillTextColor; }
+  }
+  @-ms-keyframes color-change-2 {
+    40% { color: $skillTextColor; }
+    50% { color: #5C9DE1; }
+    60% { color: $skillTextColor; }
+  }
+  @-o-keyframes color-change-2 {
+    40% { color: $skillTextColor; }
+    50% { color: #5C9DE1; }
+    60% { color: $skillTextColor; }
+  }  
+  @keyframes color-change-2 {
+    40% { color: $skillTextColor; }
+    50% { color: #5C9DE1; }
+    60% { color: $skillTextColor; }
+  }
+  
+  @-webkit-keyframes color-change-3 {
+    70% { color: $skillTextColor; }
+    80% { color: #EA335B; }
+    90% { color: $skillTextColor; }
+  }
+  @-moz-keyframes color-change-3 {
+    70% { color: $skillTextColor; }
+    80% { color: #EA335B; }
+    90% { color: $skillTextColor; }
+  }
+  @-ms-keyframes color-change-3 {
+    70% { color: $skillTextColor; }
+    80% { color: #EA335B; }
+    90% { color: $skillTextColor; }
+  }
+  @-o-keyframes color-change-3 {
+    70% { color: $skillTextColor; }
+    80% { color: #EA335B; }
+    90% { color: $skillTextColor; }
+  }  
+  @keyframes color-change-3 {
+    70% { color: $skillTextColor; }
+    80% { color: #EA335B; }
+    90% { color: $skillTextColor; }
+  }
+}
+
+
+@media screen and (max-width: 670px) {
+  @include styling($skillTextColor: white);
+}
+@media screen and (min-width: 671px) {
+  @include styling($skillTextColor: black);
+}
+
+.color-changing{
+  -webkit-animation: color-change 45s infinite;
+  -moz-animation: color-change 45s infinite;
+  -o-animation: color-change 45s infinite;
+  -ms-animation: color-change 45s infinite;
+  animation: color-change 45s infinite;
+}
+.color-changing-1{
+  -webkit-animation: color-change-1 45s infinite;
+  -moz-animation: color-change-1 45s infinite;
+  -o-animation: color-change-1 45s infinite;
+  -ms-animation: color-change-1 45s infinite;
+  animation: color-change-1 45s infinite;
+}
+.color-changing-2{
+  -webkit-animation: color-change-2 45s infinite;
+  -moz-animation: color-change-2 45s infinite;
+  -o-animation: color-change-2 45s infinite;
+  -ms-animation: color-change-2 45s infinite;
+  animation: color-change-2 45s infinite;
+}
+.color-changing-3{
+  -webkit-animation: color-change-3 45s infinite;
+  -moz-animation: color-change-3 45s infinite;
+  -o-animation: color-change-3 45s infinite;
+  -ms-animation: color-change-3 45s infinite;
+  animation: color-change-3 45s infinite;
 }

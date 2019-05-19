@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactPageScroller from "react-page-scroller";
+import downArrow from '../../assets/logos/arrow-down-1.png'
 import img1 from '../../assets/images/img1.jpg';
 import img2 from '../../assets/images/img2.jpg';
 import img3 from '../../assets/images/img3.jpg';
@@ -31,6 +32,15 @@ class PhotoScroller extends React.Component {
             transitionTimingFunction={"ease-out"}
             ref={c => this.reactPageScroller = c}
           >
+            <div className="intro white">
+              <div>
+                <p>Working remotely has given me the freedom to pursue two of my other passions<span class="yellow-text">...</span></p>
+                <p>Travel and Photography<span class="yellow-text">.</span></p>
+                <br/>
+                <p>I<span class="yellow-text">'</span>ve shared some images below<span class="yellow-text">.</span> Please browse or click <span><a href="https://www.eyeem.com/u/morrisonkey" className="yellow-text"> here </a></span> to see more<span class="yellow-text">.</span></p>
+              </div>
+              <img className="down-arrow" src={downArrow}/>
+            </div>
             <div className="project-card-container">
               <div className="project-card">
                 <div class="width-full project-card-text">
