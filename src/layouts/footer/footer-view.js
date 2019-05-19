@@ -11,7 +11,7 @@ function FooterView(props) {
   return (
     <Footer>
       <div className="copywrite">
-        <p className="copywrite-text">&copy;2019 M.Key, Made in React</p>
+        <p className="copywrite-text">&copy;2019 MorrisonKey, Made in React</p>
       </div>
       <a href="https://www.instagram.com/morrison_key" target="_blank" className="social-logo">
         <img src={instagram} alt="logo" />

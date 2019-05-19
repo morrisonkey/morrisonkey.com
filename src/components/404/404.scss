@@ -170,8 +170,10 @@ section {
   }
 }
 
-#messages {
-  display: none;
+.nycda-description {
+  margin-top: 40px;
+  margin-bottom: -40px;
+  font-size: 14px;
 }
 
 @media only screen and (max-width: 1020px) {
@@ -215,6 +217,11 @@ section {
     p {
       font-size: 11px;
     }
+  }
+
+  .nycda-description {
+    margin-top: 100px;
+    margin-bottom: -100px;
   }
 }
 
@@ -262,6 +269,12 @@ section {
     }
   }
 
+  .nycda-description {
+    margin-top: 140px;
+    margin-bottom: -140px;
+    font-size: 12px;
+    padding: 0 10%;
+  }
 }
 
 @media only screen and (max-width: 359px) {
@@ -271,7 +284,14 @@ section {
   }
 
   #display {
-    top: 195px;
+    top: 135px;
     right: 2px;
+  }
+
+  .nycda-description {
+    margin-top: 60px;
+    margin-bottom: -60px;
+    font-size: 10px;
+    padding: 0;
   }
 }

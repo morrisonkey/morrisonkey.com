@@ -14,6 +14,9 @@ const FourOhFour = (props) => {
 
   return (
     <div className="container">
+      <p className="nycda-description">
+        Original Design Showcase: 404 page designed & coded for NYCDA.com Coding School 2016
+      </p>
       <div id="playground">
         <p className="tab">
           404.html 
@@ -144,11 +147,6 @@ const FourOhFour = (props) => {
             <span className="light-gray">&gt;</span>
           </h3>
         </div>
-      </div>
-      <div id="messages">
-        <p className="message">
-          FILE NOT FOUND.
-        </p>
       </div>
     </div>
   )
