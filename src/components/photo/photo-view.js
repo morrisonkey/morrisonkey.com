@@ -34,7 +34,7 @@ class PhotoScroller extends React.Component {
           >
             <div className="intro white">
               <div>
-                <p>Working remotely has given me the freedom to pursue two of my other passions<span class="yellow-text">...</span></p>
+                <p>Working in tech gives me the freedom to pursue two of my other passions<span class="yellow-text">...</span></p>
                 <p>Travel and Photography<span class="yellow-text">.</span></p>
                 <br/>
                 <p>I<span class="yellow-text">'</span>ve shared some images below<span class="yellow-text">.</span> Please browse or click <span><a href="https://www.eyeem.com/u/morrisonkey" target="_blank" className="yellow-text"> here </a></span> to see more<span class="yellow-text">.</span></p>
