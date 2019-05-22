@@ -23,7 +23,7 @@ class About extends React.Component {
                     <span class="color-changing-2"> DEVELOP</span>ER |
                     <span class="color-changing-3"> MENTOR</span>
                   </h5>
-                  <p className="project-card-description">One horn short of a unicorn. I am currently a UX Designer seeking new opportunities in Berlin. In the past I have been a travelling Developer and Coding Teacher / Mentor in Los Angeles and New York.</p>
+                  <p className="project-card-description">One horn short of a unicorn. I am currently a UX Designer seeking new opportunities. In the past I have been a travelling Developer and Coding Teacher / Mentor in Los Angeles and New York.</p>
                   <Link to='/cv' className="project-card-link about-link">VIEW MY CV</Link>
                 </div> 
                 <div className="no-hover project-card-image">

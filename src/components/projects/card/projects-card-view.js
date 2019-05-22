@@ -44,7 +44,7 @@ const ProjectCard = (props) => {
           <h2 className="project-card-title">{title}</h2>
           <h5 className="project-card-skill">{skill}</h5>
           <p className="project-card-description">{description}</p>
-          {linked && <Link to={id} target="_blank" className="project-card-link" style={{color: `${darkColor}`, borderBottom: `${darkColor} 1px solid`}}>{linkText}</Link>}
+          {linked && <Link to={id} target="_blank" className="project-card-link" style={{color: `${darkColor}`, borderColor: `${darkColor}`}}>{linkText}</Link>}
         </div> 
 
         <Link to={id} target="_blank">

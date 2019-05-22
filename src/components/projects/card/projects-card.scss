@@ -70,10 +70,12 @@
     white-space: -o-pre; /* Opera */
     white-space: pre; /* Chrome */
     -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, .9);
+    border-bottom: 1px solid;
 
     &:hover {
-      border-bottom: 1px transparent solid!important;
+      border-color: transparent!important;
+      border-bottom-style: dotted;
     }
   }
 

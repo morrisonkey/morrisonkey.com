@@ -15,7 +15,7 @@ const FourOhFour = (props) => {
   return (
     <div className="container">
       <p className="nycda-description">
-        Original Design Showcase: 404 page designed & coded for NYCDA.com Coding School 2016
+        *<b>Original Design Showcase</b>: 404 page designed & coded for NYCDA.com Coding School 2016
       </p>
       <div id="playground">
         <p className="tab">
