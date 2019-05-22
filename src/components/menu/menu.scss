@@ -34,3 +34,14 @@
     }
   }
 }
+
+
+@media only screen and (max-width: 820px) {
+  .black-half {
+    display: none;
+  }
+
+  .white-link {
+    color: black!important;
+  }
+}

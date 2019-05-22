@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import bird from '../../../assets/images/bird-sprite.png';
 import briefly from '../../../assets/images/briefly.png';
+import filterbuds from '../../../assets/images/filterbuds.png';
 import largeCloud from '../../../assets/images/cloud-large.png';
 import leadfeeder from '../../../assets/images/leadfeeder.png';
 import mediumCloud from '../../../assets/images/cloud-medium.png';
@@ -19,7 +20,9 @@ const ProjectCard = (props) => {
   let img = '';
 
   if (imageURL) {
-    if (id === 'briefly') {
+    if (id === 'filterbuds') {
+      img = filterbuds;
+    } else if (id === 'briefly') {
       img = briefly;
     } else if (id === 'teamweek') {
       img = teamweek;
@@ -41,7 +44,7 @@ const ProjectCard = (props) => {
           <h2 className="project-card-title">{title}</h2>
           <h5 className="project-card-skill">{skill}</h5>
           <p className="project-card-description">{description}</p>
-          {linked && <Link to={id} target="_blank" className="project-card-link">{linkText}</Link>}
+          {linked && <Link to={id} target="_blank" className="project-card-link" style={{color: `${darkColor}`, borderBottom: `${darkColor} 1px solid`}}>{linkText}</Link>}
         </div> 
 
         <Link to={id} target="_blank">

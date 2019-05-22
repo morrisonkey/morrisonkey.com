@@ -6,6 +6,18 @@ import downArrow from '../../../assets/logos/arrow-down.png'
 
 export const projects = [
   {
+    id: 'filterbuds',
+    live: true,
+    skill: "APP DESIGN",
+    title: "Filter Buds",
+    description: "Client Project - Working with Hearable Labs in Berlin, we performed research to define their target-user and designed a user-friendly mobile control center for their augmented audio ear buds.",
+    linkText: "READ MORE",
+    linked: true,
+    darkColor: "#4AAF96",
+    lightColor: "",
+    imageURL: true
+  },
+  {
     id: 'briefly',
     live: true,
     skill: "WEB DESIGN",
@@ -73,7 +85,7 @@ export const projects = [
     description: "Logo, site, and brand marketing: NSR Invest. I developed their full site including CMS video platform and helped design logos and company marketing merchandise during their launch.",
     linkText: "GO TO WEBSITE",
     linked: true,
-    darkColor: "#FBC24A",
+    darkColor: "#FF665B",
     lightColor: "",
     imageURL: true
   },

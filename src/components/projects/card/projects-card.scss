@@ -69,6 +69,12 @@
     white-space: -moz-pre; /* Firefox */
     white-space: -o-pre; /* Opera */
     white-space: pre; /* Chrome */
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+    &:hover {
+      border-bottom: 1px transparent solid!important;
+    }
   }
 
   &-image {
@@ -456,7 +462,8 @@
 @media only screen and (max-width: 430px) {
   .project-card {
     width: 315px;
-    margin-bottom: 80px;
+    margin-bottom: none;
+    margin-top: 160px;
 
     &-container {
       height: 100vh;
@@ -470,15 +477,16 @@
     }
   
     &-description {
-      position: absolute;
-      top: 230px;
-      font-size: 16px;
-      line-height: 18px;
-      display: block;
+      display: none;
+      // position: absolute;
+      // top: 230px;
+      // font-size: 16px;
+      // line-height: 18px;
+      // display: block;
     }
   
     &-link {
-      top: 360px;
+      top: 180px;
     }
   
     &-image {
@@ -520,13 +528,13 @@
     }
   
     &-description {
-      top: 190px;
-      width: 250px;
-      line-height: 16px;
+      // top: 190px;
+      // width: 250px;
+      // line-height: 16px;
     }
   
     &-link {
-      top: 270px;
+      top: 150px;
     }
   
     &-image {
