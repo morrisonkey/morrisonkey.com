@@ -23,7 +23,7 @@ export const projects = [
     skill: "ANIMATIONS",
     title: "InVision Studio",
     description: "Skill Showcase - Using InVision Studio, I created this microsite: an example of an internal company teaser for an employee work-away holiday. The company I focused on, InVisionApp Inc. themselves.",
-    linkText: "VIEW PROTOTYPE",
+    linkText: "READ MORE",
     linked: true,
     darkColor: "#FF3468",
     lightColor: "",
