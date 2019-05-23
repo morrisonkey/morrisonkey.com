@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import CvImage from './cv.png'
+import CvImage from './cv.jpg'
 import './cv.scss'
 
 export default class App extends Component {
