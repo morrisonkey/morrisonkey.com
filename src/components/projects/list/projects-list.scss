@@ -55,12 +55,14 @@
   }
   .down-arrow {
     width: 32px!important;
-    bottom: 140px!important;
   }
 }
 
 @media only screen and (max-width: 820px) {
   .projects-title {
+    display: none;
+  }
+  .down-arrow {
     display: none;
   }
 }

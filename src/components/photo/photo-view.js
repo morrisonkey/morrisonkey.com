@@ -7,7 +7,6 @@ import img3 from '../../assets/images/img3.jpg';
 import img4 from '../../assets/images/img4.jpg';
 import img5 from '../../assets/images/img5.jpg';
 import img7 from '../../assets/images/img7.jpg';
-import img8 from '../../assets/images/img8.jpg';
 import img9 from '../../assets/images/img9.jpg';
 import img13 from '../../assets/images/img13.jpg';
 import img14 from '../../assets/images/img14.jpg';
@@ -45,7 +44,7 @@ class PhotoScroller extends React.Component {
               <div className="project-card">
                 <div class="width-full project-card-text">
                   <h2 className="width-full project-card-title white">Akureyri</h2>
-                  <h5 className="width-full photo-skill project-card-skill white">ICELAND</h5>
+                  <h5 className="width-full photo-skill project-card-skill">ICELAND</h5>
                 </div> 
                 <div className="no-hover project-card-image">
                   <img src={img4} className="no-hover project-card-image" alt="img" />
@@ -56,7 +55,7 @@ class PhotoScroller extends React.Component {
               <div className="project-card">
                 <div class="width-full project-card-text">
                   <h2 className="width-full project-card-title white">Cappadocia</h2>
-                  <h5 className="width-full photo-skill project-card-skill white">TURKEY</h5>
+                  <h5 className="width-full photo-skill project-card-skill">TURKEY</h5>
                 </div> 
                 <div className="no-hover project-card-image">
                   <img src={img3} className="no-hover project-card-image" alt="img" />
@@ -67,7 +66,7 @@ class PhotoScroller extends React.Component {
               <div className="project-card">
                 <div class="width-full project-card-text">
                   <h2 className="width-full project-card-title white">Hanoi City</h2>
-                  <h5 className="width-full photo-skill project-card-skill white">VIETNAM</h5>
+                  <h5 className="width-full photo-skill project-card-skill">VIETNAM</h5>
                 </div> 
                 <div className="no-hover project-card-image">
                   <img src={img2} className="no-hover project-card-image" alt="img" />
@@ -78,7 +77,7 @@ class PhotoScroller extends React.Component {
               <div className="project-card">
                 <div class="width-full project-card-text">
                   <h2 className="width-full project-card-title white">Anchorage</h2>
-                  <h5 className="width-full photo-skill project-card-skill white">ALASKA</h5>
+                  <h5 className="width-full photo-skill project-card-skill">ALASKA</h5>
                 </div> 
                 <div className="no-hover project-card-image">
                   <img src={img24} className="no-hover project-card-image" alt="img" />
@@ -89,7 +88,7 @@ class PhotoScroller extends React.Component {
               <div className="project-card">
                 <div class="width-full project-card-text">
                   <h2 className="width-full project-card-title white">Gran Canaria</h2>
-                  <h5 className="width-full photo-skill project-card-skill white">SPAIN</h5>
+                  <h5 className="width-full photo-skill project-card-skill">SPAIN</h5>
                 </div> 
                 <div className="no-hover project-card-image">
                   <img src={img1} className="no-hover project-card-image" alt="img" />
@@ -100,7 +99,7 @@ class PhotoScroller extends React.Component {
               <div className="project-card">
                 <div class="width-full project-card-text">
                   <h2 className="width-full project-card-title white">Akureyri</h2>
-                  <h5 className="width-full photo-skill project-card-skill white">ICELAND</h5>
+                  <h5 className="width-full photo-skill project-card-skill">ICELAND</h5>
                 </div> 
                 <div className="no-hover project-card-image">
                   <img src={img15} className="no-hover project-card-image" alt="img" />
@@ -111,7 +110,7 @@ class PhotoScroller extends React.Component {
               <div className="project-card">
                 <div class="width-full project-card-text">
                   <h2 className="width-full project-card-title white">Bangkok</h2>
-                  <h5 className="width-full photo-skill project-card-skill white">THAILAND</h5>
+                  <h5 className="width-full photo-skill project-card-skill">THAILAND</h5>
                 </div> 
                 <div className="no-hover project-card-image">
                   <img src={img20} className="no-hover project-card-image" alt="img" />
@@ -122,7 +121,7 @@ class PhotoScroller extends React.Component {
               <div className="project-card">
                 <div class="width-full project-card-text">
                   <h2 className="width-full project-card-title white">Gili Islands</h2>
-                  <h5 className="width-full photo-skill project-card-skill white">INDONESIA</h5>
+                  <h5 className="width-full photo-skill project-card-skill">INDONESIA</h5>
                 </div> 
                 <div className="no-hover project-card-image">
                   <img src={img14} className="no-hover project-card-image" alt="img" />
@@ -133,7 +132,7 @@ class PhotoScroller extends React.Component {
               <div className="project-card">
                 <div class="width-full project-card-text">
                   <h2 className="width-full project-card-title white">Hoi An Old Town</h2>
-                  <h5 className="width-full photo-skill project-card-skill white">VIETNAM</h5>
+                  <h5 className="width-full photo-skill project-card-skill">VIETNAM</h5>
                 </div> 
                 <div className="no-hover project-card-image">
                   <img src={img13} className="no-hover project-card-image" alt="img" />
@@ -144,7 +143,7 @@ class PhotoScroller extends React.Component {
               <div className="project-card">
                 <div class="width-full project-card-text">
                   <h2 className="width-full project-card-title white">Kenai Fjords</h2>
-                  <h5 className="width-full photo-skill project-card-skill white">ALASKA</h5>
+                  <h5 className="width-full photo-skill project-card-skill">ALASKA</h5>
                 </div> 
                 <div className="no-hover project-card-image">
                   <img src={img7} className="no-hover project-card-image" alt="img" />
@@ -155,7 +154,7 @@ class PhotoScroller extends React.Component {
               <div className="project-card">
                 <div class="width-full project-card-text">
                   <h2 className="width-full project-card-title white">Richmond</h2>
-                  <h5 className="width-full photo-skill project-card-skill white">VIRGINIA</h5>
+                  <h5 className="width-full photo-skill project-card-skill">VIRGINIA</h5>
                 </div> 
                 <div className="no-hover project-card-image">
                   <img src={img16} className="no-hover project-card-image" alt="img" />
@@ -166,7 +165,7 @@ class PhotoScroller extends React.Component {
               <div className="project-card">
                 <div class="width-full project-card-text">
                   <h2 className="width-full project-card-title white">Lao Chai Village</h2>
-                  <h5 className="width-full photo-skill project-card-skill white">VIETNAM</h5>
+                  <h5 className="width-full photo-skill project-card-skill">VIETNAM</h5>
                 </div> 
                 <div className="no-hover project-card-image">
                   <img src={img9} className="no-hover project-card-image" alt="img" />
@@ -177,7 +176,7 @@ class PhotoScroller extends React.Component {
               <div className="project-card">
                 <div class="width-full project-card-text">
                   <h2 className="width-full project-card-title white">Reykjavik</h2>
-                  <h5 className="width-full photo-skill project-card-skill white">ICELAND</h5>
+                  <h5 className="width-full photo-skill project-card-skill">ICELAND</h5>
                 </div> 
                 <div className="no-hover project-card-image">
                   <img src={img5} className="no-hover project-card-image" alt="img" />
