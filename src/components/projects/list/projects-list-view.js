@@ -47,7 +47,7 @@ export const projects = [
     skill: "FEATURE DESIGN",
     title: "Fan Funding",
     description: "Case Study - Designing a new feature for an existing product. Focusing on SoundCloud, I proposed a way to back your favorite artists and enjoy more content from them.",
-    linkText: "VIEW PROTOTYPE",
+    linkText: "COMING SOON",
     linked: true,
     darkColor: "#FE3903",
     lightColor: "",
@@ -132,7 +132,7 @@ class ProjectList extends React.Component {
           <p>Hello<span class="coral-text">.</span> My name is Key<span class="coral-text">.</span> I<span class="coral-text">'</span>m a<span class="coral-text">...</span></p>
           <p>Designer <span className="coral-text">|</span> Developer <span className="coral-text">|</span> Mentor</p>
           <br/>
-          <p>Check out my portfolio below and<span><a href="mailto:mr.morrison.key@gmail.com" className="coral-text"> email me </a></span>if you want to work together<span class="coral-text">.</span></p>
+          <p>Check out my portfolio below and email me at<span><a href="mailto:mr.morrison.key@gmail.com" className="coral-text"> mr.morrison.key@gmail.com </a></span>if you want to work together<span class="coral-text">.</span></p>
         </div>
         <img className="down-arrow" src={downArrow}/>
       </div>

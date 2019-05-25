@@ -30,9 +30,9 @@ const FourOhFour = (props) => {
                 text={messages} //text=["Hello.", "World!"]
               />
             </h4>
-            <a href="/">
-              <button>GO TO HOME PAGE</button>
-            </a>
+            <button>
+              <a className="dodger" href="/">GO TO HOME PAGE</a>
+            </button>
             <p>
               Or if you are really feeling lost, contact me at 
               <a className="dodger" href="mailto:mr.morrison.key@gmail.com"> mr.morrison.key@gmail.com </a>
@@ -75,17 +75,15 @@ const FourOhFour = (props) => {
           <h3 className="white">
             <span className="gray">4 &nbsp; &nbsp; &nbsp; &nbsp;</span>
             <span className="light-gray">&lt;</span>
-            <span className="red">a &nbsp;</span>
-            <span className="yellow">href=</span>
-            <span className="green">"/"</span>
+            <span className="red">button</span>
             <span className="light-gray">&gt;</span>
           </h3>
           <h3 className="white">
             <span className="gray">5 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>
             <span className="light-gray">&lt;</span>
-            <span className="red">button</span>
-            <span className="yellow">&nbsp; style=</span>
-            <span className="green">"color: blue"</span>
+            <span className="red">a &nbsp;</span>
+            <span className="yellow">href=</span>
+            <span className="green">"/"</span>
             <span className="light-gray">&gt;</span>
           </h3>
           <h3 className="white">
@@ -95,13 +93,13 @@ const FourOhFour = (props) => {
           <h3 className="white">
             <span className="gray">7 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>
             <span className="light-gray">&lt;/</span>
-            <span className="red">button</span>
+            <span className="red">a</span>
             <span className="light-gray">&gt;</span>
           </h3>
           <h3 className="white">
             <span className="gray">8 &nbsp; &nbsp; &nbsp; &nbsp;</span>
             <span className="light-gray">&lt;/</span>
-            <span className="red">a</span>
+            <span className="red">button</span>
             <span className="light-gray">&gt;</span>
           </h3>
           <h3 className="white">
@@ -120,8 +118,6 @@ const FourOhFour = (props) => {
             <span className="red">a &nbsp;</span>
             <span className="yellow">href=</span>
             <span className="green">"mailto:mr.morrison.key@gmail.com"</span>
-            <span className="yellow">&nbsp; style=</span>
-            <span className="green">"color: blue"</span>
             <span className="light-gray">&gt;</span>
           </h3>
           <h3 className="white">
