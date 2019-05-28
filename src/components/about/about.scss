@@ -8,7 +8,8 @@
 }
 
 .about-skill {
-  margin-left: 45px;
+  margin-left: 44px;
+  letter-spacing: 6.1px;
 }
 
 .about-link {
@@ -17,13 +18,15 @@
 
 @media only screen and (max-width: 1216px) {
   .about-skill {
-    margin-left: 38px;
+    letter-spacing: 3.5px;
+    margin-left: 36px;
   }  
 }
 
 @media only screen and (max-width: 1024px) {
   .about-skill {
-    margin-left: 30px;
+    margin-left: 28px;
+    letter-spacing: 1.175px;
   }  
 }
 
@@ -31,6 +34,7 @@
   .about-skill {
     left: -55px;
     width: 240px;
+    letter-spacing: 1px;
   }
 }
 
