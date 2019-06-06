@@ -4,10 +4,11 @@
   "private": true,
   "engines": {
     "npm": "6.7.0",
-    "node": "10.16.0"
+    "node": "11.10.1"
   },
   "dependencies": {
     "gh-pages": "^2.0.1",
+    "node": "10.16.0",
     "node-sass": "^4.12.0",
     "react": "^16.8.6",
     "react-bulma-components": "^2.3.0",
@@ -41,5 +42,5 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://morrison-key.github.io/morrisonkey.com"
+  "homepage": "https://morrison-key.github.io/morrison-key.github.io"
 }
